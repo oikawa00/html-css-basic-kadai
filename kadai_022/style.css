@@ -1,0 +1,104 @@
+h1 p body {
+  margin: 0;
+}
+
+p a {
+  font-size: 20px;
+}
+
+/* ------------------------ヘッダー部分------------------------ */
+header {
+  background-color: rgb(244, 79, 79);
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* ------------------------ヘッダー部分------------------------ */
+
+
+/* ------------------------メイン部分------------------------ */
+
+
+main {
+  margin: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.contents {
+  flex-basis:25%;
+  border: 3px solid rgb(238, 204, 204);
+  padding: 10px 15px;
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+.contents img {
+  margin: 10px auto;
+  width:70%;
+}
+
+
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: dotted rgb(236, 122, 122);
+}
+
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+
+}
+
+/* ------------------------メイン部分------------------------ */
+
+/* ------------------------フッター部分------------------------ */
+
+
+
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+
+}
+
+footer a:visited {
+  color: rgb(193, 234, 251);
+
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+
+}
+
+/* ------------------------フッター部分------------------------ */
+
+
+/* ------------------------レスポンシブ部分------------------------ */
+
+@media screen and (max-width: 768px) {
+  #parent {
+    display: block;
+  }
+}
